@@ -50,7 +50,9 @@ class GamesaleSpider(scrapy.Spider):
                 article_id = id_object.group(1)
 
         yield {
-                'header_list': header_list,
+                'author': author,
+                'title': title,
+                'date': date,
                 'content':content,
                 'article_id':article_id
                 }
